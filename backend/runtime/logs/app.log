@@ -1,0 +1,521 @@
+2015-10-23 19:55:38 [::1][-][e1vvegc53eacgoga8gcr65nqt3][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#8 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one('<span class="ke...')
+#11 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#12 C:\wamp\www\advanced\common\models\User.php(82): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#13 C:\wamp\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#14 C:\wamp\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...')
+#16 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#17 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#18 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#19 C:\wamp\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#20 C:\wamp\www\advanced\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#21 [internal function]: backend\controllers\SiteController->actionLogin()
+#22 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#23 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#24 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#25 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#26 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#6 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one('<span class="ke...')
+#9 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#10 C:\wamp\www\advanced\common\models\User.php(82): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 C:\wamp\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#12 C:\wamp\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...')
+#14 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#15 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#16 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#17 C:\wamp\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#18 C:\wamp\www\advanced\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#21 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#22 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#23 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#24 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\wamp\www\advanced\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2015-10-23 19:55:37 [::1][-][e1vvegc53eacgoga8gcr65nqt3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'YnJ2czJUdHoREUYxfmNDKCA.AjdmEztDGDQSCmsmHTEJKBQJQws5Sw=='
+    'LoginForm' => [
+        'username' => 'demo'
+        'password' => 'demo'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e1vvegc53eacgoga8gcr65nqt3'
+    '_csrf' => 'ecdd45c2aa3fcb7bb284d3b159283bc3ec57c70888ff316c7b128b7bc124900aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sc0BL77RBLtDTGO9zFdyYriKkZbzq_M1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=e1vvegc53eacgoga8gcr65nqt3; _csrf=ecdd45c2aa3fcb7bb284d3b159283bc3ec57c70888ff316c7b128b7bc124900aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sc0BL77RBLtDTGO9zFdyYriKkZbzq_M1%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '11112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1445622937.886
+    'REQUEST_TIME' => 1445622937
+]
+2015-10-23 20:20:37 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2_advanced_tests'' in C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('admin')
+#6 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('admin')
+#7 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#8 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('fetch', NULL)
+#9 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one(NULL)
+#11 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#12 C:\wamp\www\advanced\common\models\User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#13 C:\wamp\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('admin')
+#14 C:\wamp\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#16 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#17 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#18 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#19 C:\wamp\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#20 C:\wamp\www\advanced\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#21 [internal function]: backend\controllers\SiteController->actionLogin()
+#22 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#25 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#26 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp\www\advanced\backend\web\index-test.php(19): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2_advanced_tests'' in C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('admin')
+#4 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('admin')
+#5 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#6 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('fetch', NULL)
+#7 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one(NULL)
+#9 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#10 C:\wamp\www\advanced\common\models\User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#11 C:\wamp\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('admin')
+#12 C:\wamp\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#14 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#16 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#17 C:\wamp\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#18 C:\wamp\www\advanced\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#23 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#24 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\wamp\www\advanced\backend\web\index-test.php(19): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2015-10-23 20:20:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'dVNQdjJYczksIhcDA2AXdyICGgJ/NDd7IQEqM3YeIgAFEGRCSmgaew=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e1vvegc53eacgoga8gcr65nqt3'
+    '_csrf' => '154dcee0197d3389c7a332f61baf22d05806cc9b6bfe11152b6082454549d29fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YqGu18dNWQJtMlDBTRzEDFQ9pC44x0iB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced/backend/web/index-test.php'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Pedro Camponês\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PEDRO'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Pedro Camponês'
+    'LOCALAPPDATA' => 'C:\\Users\\Pedro Camponês\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PEDRO'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Users\\Pedro Camponês\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\PEDROC~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\PEDROC~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Pedro'
+    'USERDOMAIN_ROAMINGPROFILE' => 'Pedro'
+    'USERNAME' => 'Pedro Camponês'
+    'USERPROFILE' => 'C:\\Users\\Pedro Camponês'
+    'VAGRANT_HOME' => 'C:\\HashiCorp\\Vagrant'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'SCRIPT_NAME' => '/advanced/backend/web/index-test.php'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/advanced/backend/web/index-test.php'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/advanced'
+    'HTTP_COOKIE' => 'PHPSESSID=e1vvegc53eacgoga8gcr65nqt3; _csrf=154dcee0197d3389c7a332f61baf22d05806cc9b6bfe11152b6082454549d29fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YqGu18dNWQJtMlDBTRzEDFQ9pC44x0iB%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:63342/advanced/backend/web/index-test.php?r=site%2Flogin'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:63342'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '198'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:63342'
+    'CONTENT_LENGTH' => '198'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PORT' => '63342'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'PhpStorm 9.0.2'
+    'SERVER_SOFTWARE' => 'PhpStorm 9.0.2'
+    'REMOTE_PORT' => '11521'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_URI' => '/advanced/backend/web/index-test.php?r=site%2Flogin'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/advanced/backend/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1445624436.3793
+    'REQUEST_TIME' => 1445624436
+]
+2015-10-24 11:39:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/contact' in C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('contact', Array)
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/contact', Array)
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp\www\advanced\backend\web\index-test.php(19): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\advanced\backend\web\index-test.php(19): yii\base\Application->run()
+#2 {main}
+2015-10-24 11:39:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e1vvegc53eacgoga8gcr65nqt3'
+    '_csrf' => '62506df3bee0d47ce79943c5326e66e5c18d982816c863189ce2722ffa0a5aeea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YTuAoEv7ecIhYl8X3PGZVpzfy4LjRm8a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced/backend/web/index-test.php'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Pedro Camponês\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PEDRO'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Pedro Camponês'
+    'LOCALAPPDATA' => 'C:\\Users\\Pedro Camponês\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PEDRO'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Users\\Pedro Camponês\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\PEDROC~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\PEDROC~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Pedro'
+    'USERDOMAIN_ROAMINGPROFILE' => 'Pedro'
+    'USERNAME' => 'Pedro Camponês'
+    'USERPROFILE' => 'C:\\Users\\Pedro Camponês'
+    'VAGRANT_HOME' => 'C:\\HashiCorp\\Vagrant'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'SCRIPT_NAME' => '/advanced/backend/web/index-test.php'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/advanced/backend/web/index-test.php'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/advanced'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'HTTP_COOKIE' => 'PHPSESSID=e1vvegc53eacgoga8gcr65nqt3; _csrf=62506df3bee0d47ce79943c5326e66e5c18d982816c863189ce2722ffa0a5aeea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YTuAoEv7ecIhYl8X3PGZVpzfy4LjRm8a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:63342'
+    'CONTENT_LENGTH' => '0'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PORT' => '63342'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'PhpStorm 9.0.2'
+    'SERVER_SOFTWARE' => 'PhpStorm 9.0.2'
+    'REMOTE_PORT' => '11749'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/advanced/backend/web/index-test.php?r=site%2Fcontact'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/advanced/backend/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1445679545.2484
+    'REQUEST_TIME' => 1445679545
+]
+2015-10-25 11:48:18 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2_advanced_tests'' in C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('demo')
+#6 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('demo')
+#7 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#8 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('fetch', NULL)
+#9 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one(NULL)
+#11 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#12 C:\wamp\www\advanced\common\models\User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#13 C:\wamp\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('demo')
+#14 C:\wamp\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#16 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#17 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#18 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#19 C:\wamp\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#20 C:\wamp\www\advanced\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#21 [internal function]: backend\controllers\SiteController->actionLogin()
+#22 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#24 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#25 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#26 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\wamp\www\advanced\backend\web\index-test.php(19): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2_advanced_tests'' in C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('demo')
+#4 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('demo')
+#5 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#6 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('fetch', NULL)
+#7 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one(NULL)
+#9 C:\wamp\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#10 C:\wamp\www\advanced\common\models\User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#11 C:\wamp\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('demo')
+#12 C:\wamp\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#14 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 C:\wamp\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#16 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#17 C:\wamp\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#18 C:\wamp\www\advanced\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#23 C:\wamp\www\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#24 C:\wamp\www\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\wamp\www\advanced\backend\web\index-test.php(19): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2015-10-25 11:48:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'UkJqNEdYc2Y1Lz5ZBQAjVD4xEkUpHz8uBBQZbCFvPwcwCj8FfzspAg=='
+    'LoginForm' => [
+        'username' => 'demo'
+        'password' => 'demo'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e1vvegc53eacgoga8gcr65nqt3'
+    '_csrf' => '1bbaa9ec443838e84b66c54d569f2bc76516243500a4ed7f496602003251696aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmTmBXP2lsxqnGLHVVsXf7LabHU18cZd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced/backend/web/index-test.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/advanced/backend/web/index-test.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=e1vvegc53eacgoga8gcr65nqt3; _csrf=1bbaa9ec443838e84b66c54d569f2bc76516243500a4ed7f496602003251696aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmTmBXP2lsxqnGLHVVsXf7LabHU18cZd%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/advanced/backend/web/index-test.php'
+    'REMOTE_PORT' => '28280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/advanced/backend/web/index-test.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/advanced/backend/web/index-test.php'
+    'PHP_SELF' => '/advanced/backend/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1445770086.666
+    'REQUEST_TIME' => 1445770086
+]
