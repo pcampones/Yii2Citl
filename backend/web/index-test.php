@@ -17,11 +17,3 @@ require(__DIR__ . '/../config/bootstrap.php');
 $config = require(__DIR__ . '/../../tests/codeception/config/backend/acceptance.php');
 
 (new yii\web\Application($config))->run();
-
-//dwsdsdsdsdsdsds
-//sakjsdiuasuaifasifafs
-
-//ioihdfgydgyfdsugfyd
-echo($config);
-
-echo "string";
