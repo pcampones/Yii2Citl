@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\AgendaForm;
+use frontend\models\ListaAlunosForm;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -210,4 +212,23 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionAgenda()
+    {
+        $model = new AgendaForm();
+
+
+
+        return $this->render('agenda', ['model' => $model,]);
+    }
+
+    public function actionListaAlunos()
+    {
+        $model = new ListaAlunosForm();
+
+
+
+        return $this->render('listaAlunos', ['model' => $model,]);
+    }
+
 }
