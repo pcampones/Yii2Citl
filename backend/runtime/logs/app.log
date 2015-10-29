@@ -1133,3 +1133,200 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1445958540.7713
     'REQUEST_TIME' => 1445958540
 ]
+2015-10-29 18:29:23 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('gii', Array)
+#1 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\Yii2Citl\backend\web\index-test.php(19): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\Yii2Citl\backend\web\index-test.php(19): yii\base\Application->run()
+#2 {main}
+2015-10-29 18:29:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    'e1f4d29cf9a44a9f30518cfbfe97eb06' => 'e42c423fc6cb3d8739e360a19339b98c5e1e3704a:4:{i:0;s:5:\"admin\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:0:{}}'
+    'PHPSESSID' => 'bvf6dhc7r3oq8op117q0t3sqq1'
+    '_csrf' => '6cfd22346e4257002b17eb474d7b17b308b459c0c51a05e452e59c2eb998dc79a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Du3yAy-qBA0PnKblQ_emVbxxfb0qhiBz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2citl/backend/web/index-test.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'e1f4d29cf9a44a9f30518cfbfe97eb06=e42c423fc6cb3d8739e360a19339b98c5e1e3704a%3A4%3A%7Bi%3A0%3Bs%3A5%3A%22admin%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; PHPSESSID=bvf6dhc7r3oq8op117q0t3sqq1; _csrf=6cfd22346e4257002b17eb474d7b17b308b459c0c51a05e452e59c2eb998dc79a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Du3yAy-qBA0PnKblQ_emVbxxfb0qhiBz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/Yii2Citl/backend/web/index-test.php'
+    'REMOTE_PORT' => '61809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/yii2citl/backend/web/index-test.php?r=gii'
+    'SCRIPT_NAME' => '/yii2citl/backend/web/index-test.php'
+    'PHP_SELF' => '/yii2citl/backend/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1446139763.374
+    'REQUEST_TIME' => 1446139763
+]
+2015-10-29 18:29:32 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('gii', Array)
+#1 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\Yii2Citl\backend\web\index-test.php(19): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\Yii2Citl\backend\web\index-test.php(19): yii\base\Application->run()
+#2 {main}
+2015-10-29 18:29:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    'e1f4d29cf9a44a9f30518cfbfe97eb06' => 'e42c423fc6cb3d8739e360a19339b98c5e1e3704a:4:{i:0;s:5:\"admin\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:0:{}}'
+    'PHPSESSID' => 'bvf6dhc7r3oq8op117q0t3sqq1'
+    '_csrf' => '6cfd22346e4257002b17eb474d7b17b308b459c0c51a05e452e59c2eb998dc79a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Du3yAy-qBA0PnKblQ_emVbxxfb0qhiBz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2citl/backend/web/index-test.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'e1f4d29cf9a44a9f30518cfbfe97eb06=e42c423fc6cb3d8739e360a19339b98c5e1e3704a%3A4%3A%7Bi%3A0%3Bs%3A5%3A%22admin%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; PHPSESSID=bvf6dhc7r3oq8op117q0t3sqq1; _csrf=6cfd22346e4257002b17eb474d7b17b308b459c0c51a05e452e59c2eb998dc79a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Du3yAy-qBA0PnKblQ_emVbxxfb0qhiBz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/Yii2Citl/backend/web/index-test.php'
+    'REMOTE_PORT' => '61813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/yii2citl/backend/web/index-test.php?r=gii'
+    'SCRIPT_NAME' => '/yii2citl/backend/web/index-test.php'
+    'PHP_SELF' => '/yii2citl/backend/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1446139772.352
+    'REQUEST_TIME' => 1446139772
+]
+2015-10-29 18:30:10 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('gii', Array)
+#1 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\Yii2Citl\backend\web\index-test.php(19): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\Yii2Citl\backend\web\index-test.php(19): yii\base\Application->run()
+#2 {main}
+2015-10-29 18:30:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    'e1f4d29cf9a44a9f30518cfbfe97eb06' => 'e42c423fc6cb3d8739e360a19339b98c5e1e3704a:4:{i:0;s:5:\"admin\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:0:{}}'
+    'PHPSESSID' => 'bvf6dhc7r3oq8op117q0t3sqq1'
+    '_csrf' => '6cfd22346e4257002b17eb474d7b17b308b459c0c51a05e452e59c2eb998dc79a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Du3yAy-qBA0PnKblQ_emVbxxfb0qhiBz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2citl/backend/web/index-test.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'e1f4d29cf9a44a9f30518cfbfe97eb06=e42c423fc6cb3d8739e360a19339b98c5e1e3704a%3A4%3A%7Bi%3A0%3Bs%3A5%3A%22admin%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; PHPSESSID=bvf6dhc7r3oq8op117q0t3sqq1; _csrf=6cfd22346e4257002b17eb474d7b17b308b459c0c51a05e452e59c2eb998dc79a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Du3yAy-qBA0PnKblQ_emVbxxfb0qhiBz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/Yii2Citl/backend/web/index-test.php'
+    'REMOTE_PORT' => '61824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/yii2citl/backend/web/index-test.php?r=gii'
+    'SCRIPT_NAME' => '/yii2citl/backend/web/index-test.php'
+    'PHP_SELF' => '/yii2citl/backend/web/index-test.php'
+    'REQUEST_TIME_FLOAT' => 1446139810.272
+    'REQUEST_TIME' => 1446139810
+]
