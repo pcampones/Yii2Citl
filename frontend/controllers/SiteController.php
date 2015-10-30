@@ -1,8 +1,8 @@
 <?php
 namespace frontend\controllers;
 
-use frontend\models\AgendaForm;
-use frontend\models\ListaAlunosForm;
+
+
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -14,6 +14,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+
 
 /**
  * Site controller
@@ -117,10 +118,33 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        require_once('./../vendor/smtpmail/PHPMailer.php');
         $model = new ContactForm();
+        $mail = new PHPMailer();
+        $mail->Mailer="smtp";
+        $mail->IsHTML(true);
+        $mail->SMTPSecure="tls";
+        $mail->Host="smtp.gmail.com";
+        $mail->Port=  587;
+        $mail->SMTPAuth = true;
+        $mail-> IsSMTP();
+        $mail->Username = "pedrocampones2@gmail.com"; // Your Email Address
+        $mail->Password = "pedro1908"; // Your Password
+
+
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+
+            $mail->SetFrom($model->email, $model->name);
+            $mail->FromName ="CITLLEIRIA";
+            $mail->Subject = $model->subject;
+            $msg = $model->body . '<br />' . $model->name;
+            $mail->MsgHtml($msg);
+            $mail->CharSet = "UTF-8";
+
+            $mail->AddAddress($model->email, $model->name);
+
+            if ($model->sendEmail(Yii::$app->params['Username'])) {
+                Yii::$app->session->setFlash('success', 'Mail Enviado');
             } else {
                 Yii::$app->session->setFlash('error', 'There was an error sending email.');
             }
@@ -132,6 +156,7 @@ class SiteController extends Controller
             ]);
         }
     }
+
 
     /**
      * Displays about page.
@@ -212,23 +237,4 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
-
-    public function actionAgenda()
-    {
-        $model = new AgendaForm();
-
-
-
-        return $this->render('agenda', ['model' => $model,]);
-    }
-
-    public function actionListaAlunos()
-    {
-        $model = new ListaAlunosForm();
-
-
-
-        return $this->render('listaAlunos', ['model' => $model,]);
-    }
-
 }
