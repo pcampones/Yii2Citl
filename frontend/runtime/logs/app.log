@@ -3331,3 +3331,91 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1445958819.0028
     'REQUEST_TIME' => 1445958819
 ]
+2015-10-30 18:17:36 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'frontend\controllers\SiteController::actionContact(): Failed opening required './../vendor/smtpmail/PHPMailer.php' (include_path='.;C:\php\pear')' in C:\wamp\www\Yii2Citl\frontend\controllers\SiteController.php:121
+Stack trace:
+#0 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\Yii2Citl\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\Yii2Citl\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2015-10-30 18:17:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'e1f4d29cf9a44a9f30518cfbfe97eb06' => 'e42c423fc6cb3d8739e360a19339b98c5e1e3704a:4:{i:0;s:5:\"admin\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:0:{}}'
+    'PHPSESSID' => 'bvf6dhc7r3oq8op117q0t3sqq1'
+    '_csrf' => 'ba5bb515e1526c5287bf6fc1d4a6df71bd96ade9001897dd501692621e7cf3a5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-n1bUbyX4cHVw4M6NkmyNiDj1cM2FO_v\";}'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Fábio\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-2IODED5'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Fábio'
+    'LOCALAPPDATA' => 'C:\\Users\\Fábio\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\FBIO~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\FBIO~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-2IODED5'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-2IODED5'
+    'USERNAME' => 'Fábio'
+    'USERPROFILE' => 'C:\\Users\\Fábio'
+    'VAGRANT_HOME' => 'C:\\HashiCorp\\Vagrant'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/Yii2Citl/frontend/web/index.php'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/Yii2Citl'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'HTTP_COOKIE' => 'e1f4d29cf9a44a9f30518cfbfe97eb06=e42c423fc6cb3d8739e360a19339b98c5e1e3704a%3A4%3A%7Bi%3A0%3Bs%3A5%3A%22admin%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A0%3A%7B%7D%7D; PHPSESSID=bvf6dhc7r3oq8op117q0t3sqq1; _csrf=ba5bb515e1526c5287bf6fc1d4a6df71bd96ade9001897dd501692621e7cf3a5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-n1bUbyX4cHVw4M6NkmyNiDj1cM2FO_v%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost:63342/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:63342'
+    'CONTENT_LENGTH' => '0'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PORT' => '63342'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'PhpStorm 9.0.2'
+    'SERVER_SOFTWARE' => 'PhpStorm 9.0.2'
+    'REMOTE_PORT' => '65124'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fcontact'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1446225456.0952
+    'REQUEST_TIME' => 1446225456
+]
