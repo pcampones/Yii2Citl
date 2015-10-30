@@ -118,7 +118,7 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        require_once('./../vendor/smtpmail/PHPMailer.php');
+        require_once('../vendor/smtpmail/PHPMailer.php');
         $model = new ContactForm();
         $mail = new PHPMailer();
         $mail->Mailer="smtp";
